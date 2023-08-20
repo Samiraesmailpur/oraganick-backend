@@ -33,6 +33,12 @@ const productSchema = Schema({
     type: String,
     required: true,
   },
+  recommended: {
+    type: Boolean,
+  },
+  rating: {
+    type: Number,
+  },
 });
 
 const Product = model("Product", productSchema);
