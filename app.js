@@ -12,7 +12,9 @@ app.use(express.json());
 app.use(express.static("public"));
 
 app.use("/api/products", require("./routes/api/products"));
+app.use("/api/recommended", require("./routes/api/recommended"));
 app.use("/api/orders", require("./routes/api/orders"));
+app.use("/api/shop", require("./routes/api/shop"));
 
 app.use((req, res) => {
   res.status(404).json({ message: "Not found" });

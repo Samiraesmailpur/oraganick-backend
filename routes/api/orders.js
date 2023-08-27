@@ -1,5 +1,5 @@
 const express = require("express");
-const ctrl = require("../../controllers/addOrder");
+const ctrl = require("../../controllers/order");
 const { validateBody } = require("../../middlewares/validateBody");
 const { schema } = require("../../models/order");
 
